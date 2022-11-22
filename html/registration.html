@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru-Ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="../img/favicon.jpg">
+
+        <link rel='stylesheet' href="../css/reset.css">
+        <link rel='stylesheet' href="../css/reglog.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Регистрация</title>
+    </head>
+
+    <body>
+        <header id="header">
+            <a href="index.html" class="header_logo_link">
+                <img class ="logo_img" src = "../img/logo.svg" width="150px" height="150px" alt = "AutoDrive">
+            </a>
+        </header>
+
+        <main>
+            <div class="container">
+                <div id="reglog_block">
+                    <h2>Регистрация</h2>
+                    <form id="regform" action="#">
+                        <div class="email"> 
+                            <div class="icon">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <input type="text" class="form_input _req _email" name="email" placeholder="Email*">
+                        </div>
+
+                        <div class="telephone"> 
+                            <div class="icon">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                            </div>
+                            <input type="text" class="form_input _req _telephone" name="telephone" placeholder="Телефон*">
+                        </div>
+                       
+                        <div class="name"> 
+                            <div class="icon">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </div>
+                            <input type="text" class="form_input _req" name="name" placeholder="Имя*">
+                        </div>
+
+                        <div class="surname"> 
+                            <div class="icon">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </div>
+                            <input type="text" class="form_input _req" name="surname" placeholder="Фамилия*">
+                        </div>
+                        
+                        <div class="password"> 
+                            <div class="icon">
+                                <i class="fa fa-key" aria-hidden="true"></i>
+                            </div>
+                            <input type="password" class="form_input _req _password" name="password" placeholder="Пароль*">
+                        </div>
+
+                        <div class="confpassword"> 
+                            <div class="icon">
+                                <i class="fa fa-key" aria-hidden="true"></i>
+                            </div>
+                            <input type="password" class="form_input _req _confpassword" name="confpassword" placeholder="Повторите пароль*">
+                        </div>
+                        <p class="gender">Пол</p>
+                        <div class="gender">
+                            <input type="radio" value="None" id="male" class="form_input" name="gender" checked>
+                            <label for="male" class="radio">Мужской</label>
+
+                            <input type="radio" value="None" id="female" name="gender" class="form_input">
+                            <label for="female" class="radio">Женский</label>
+                        </div> 
+
+                        <p>Нажимая кнопку регистрации, вы соглашаетесь с <a href="#"> условиями пользования</a></p>
+                        <input class="button" type="submit" value="Регистрация">
+                        
+                    </form>
+                </div>
+            </div> 
+        </main>
+
+        <footer>
+            <h2 class="name">AutoDrive</h2>
+            <p class="description">Сеть автосалонов города Москвы</p>
+            <h2 class="clients">Клиентам</h2>
+            <div class="privacy">
+                <a class="footer_link" href="#">Политика конфиденциальности</a>
+                <a class="footer_link" href="#">Публичная оферта</a>
+            </div>
+            <h2 class="contacts">Контакты</h2>
+            <address>
+                <a href="tel:01234567890" class="footer_link">Наш телефон +71234567890</a>
+                <a href="mailto:sendemail@gmail.com" class="footer_link">Наша почта sendemail@gmail.com</a>
+                <p>г.Москва, пр-кт Вернадского 78</p>
+            </address>
+            <h2 class="social">Мы в социальных сетях</h2>
+            <div class="social-buttons">
+                <div class="social-button">
+                    <a href="#">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </div>
+
+                <div class="social-button">
+                    <a href="#">
+                        <i class="fa fa-whatsapp"></i>
+                    </a>
+                </div>
+
+                <div class="social-button">
+                    <a href="#">
+                        <i class="fa fa-vk"></i>
+                    </a>
+                </div>
+
+                <div class="social-button">
+                    <a href="#">
+                        <i class="fa fa-telegram"></i>
+                    </a>
+                </div>
+
+                <div class="social-button">
+                    <a href="#">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="copyright">"ООО AutoDrive © Все права защищены" </p>
+        </footer>
+        <script src="../js/script.js"></script>
+    </body>
+</html>

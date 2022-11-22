@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru-Ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="../img/favicon.jpg">
+
+        <link rel='stylesheet' href="../css/reset.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel='stylesheet' href="../css/trade-in.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="../js/script.js"></script>
+        <title>Trade-in</title>
+    </head>
+
+    <body>
+        <header id="header">
+            <div class="container">
+                <a class="logo" href="../html/index.html">AUTO Drive</a>
+                <div class="navigation">
+                    <ul class="nav-menu">
+                        <li><a class="menu_link" href="../html/cars.html">Автомобили</a></li>
+                        <li><a class="menu_link" href="../html/service.html">Сервис</a></li>
+                        <li><a class="menu_link" href="../html/trade-in.html">Trade-in</a></li>
+                        <li>
+                            <div class="reg_log">
+                                <a href="../html/login.html">Вход</a>
+                                <div class="line"></div>
+                                <a href="../html/registration.html">Регистрация</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div> 
+                <input id="menu_toggle" type="checkbox">
+                <label class="menu_btn" for="menu_toggle">
+                    <span></span>
+                </label>    
+                <div class="mobile-menu">
+                    <ul class="menu_box">
+                        <li class="first"><a class="mobile_link" href="../html/cars.html">Автомобили</a></li>
+                        <li class="second"><a class="mobile_link" href="../html/service.html">Сервис</a></li>
+                        <li class="third"><a class="mobile_link" href="../html/trade-in.html">Trade-in</a></li>
+                        <li class="fourth"><a class="mobile_link" href="../html/login.html">Вход</a></li>
+                        <li class="fifth"><a class="mobile_link" href="../html/registration.html">Регистрация</a></li>
+                    </ul>
+                </div> 
+            </div>  
+        </header>
+
+        <main>
+            <div class="container">
+                <section id="trade-in">
+                    <h2 class="section_header">Схема обмена автомобиля</h2>
+                    <div class="desktop_scheme">
+                        <div class="item">
+                            <div class="block">1</div>
+                            <p>Выбор нового автомобиля</p>
+                        </div>
+                        <i class="arrow right"></i>
+
+                        <div class="item">
+                            <div class="block">2</div>
+                            <p>Заполнение анкеты</p>
+                        </div>
+                        <i class="arrow right"></i>
+
+                        <div class="item">
+                            <div class="block">3</div>
+                            <p>Диагоностика и оценка Вашего авто</p>
+                        </div>
+                        <i class="arrow right"></i>
+
+                        <div class="item">
+                            <div class="block">4</div>
+                            <p>Заключение договора</p>
+                        </div>
+                        <i class="arrow right"></i>
+
+                        <div class="item">
+                            <div class="block">5</div>
+                            <p>Получение нового автомобиля</p>
+                        </div>
+                    </div>
+
+                    <div class="mobile_scheme">
+                        <div class="item">
+                            <div class="circle">1</div>
+                            <p>Выбор нового автомобиля</p>
+                        </div>
+
+                        <div class="item">
+                            <div class="circle">2</div>
+                            <p>Заполнение анкеты</p>
+                        </div>
+
+                        <div class="item">
+                            <div class="circle">3</div>
+                            <p>Диагоностика и оценка Вашего авто</p>
+                        </div>
+
+                        <div class="item">
+                            <div class="circle">4</div>
+                            <p>Заключение договора</p>
+                        </div>
+
+                        <div class="item">
+                            <div class="circle">5</div>
+                            <p>Получение нового автомобиля</p>
+                        </div>
+                    </div>
+
+                    <form action="">
+
+                        <h3 class="buy_name">Покупаемый автомобиль</h3>
+                        <h3 class="sell_name">Сдаваемый автомобиль</h3>
+                        <h3 class="contact_name">Контактные данные</h3>
+                        <div class="buy_auto">
+                            <div class="buy_mark">
+                                <select id="buy_mark">
+                                    <option selected disabled hidden>Марка</option>
+                                    <option value="Kia">Kia</option>
+                                    <option value="Audi">Audi</option>
+                                    <option value="Bmw">Bmw</option>
+                                    <option value="Lada">New York</option>
+                                    <option value="Hyundai">Hyundai</option>
+                                    <option value="Mitsubishi">Mitsubishi</option>
+                                    <option value="Renault">Renault</option>
+                                    <option value="Peugeot">Peugeot</option>
+                                    <option value="Suzuki">Suzuki</option>
+                                    <option value="Citroen">Citroen</option>
+                                    <option value="Uaz">Uaz</option>
+                                    <option value="Ford">Ford</option>
+                                    <option value="Nissan">Nissan</option>
+                                    <option value="Porshe">Porshe</option>
+                                    <option value="Jeep">Jeep</option>
+                                    <option value="Mersedes">Mersedes</option>
+                                </select>
+                            </div>
+                            <div class="buy_model">
+                                <select id="buy_model">
+                                    <option selected disabled hidden>Модель</option>
+                                    <option value="model1">Модель 1</option>
+                                    <option value="model1">Модель 2</option>
+                                    <option value="model1">Модель 3</option>
+                                    <option value="model1">Модель 4</option>
+                                    <option value="model1">Модель 5</option>
+                                </select>
+                            </div>
+                            <div class="buy_complection">
+                                <select id="buy_complection">
+                                    <option selected disabled hidden>Комплектация</option>
+                                    <option value="model1">Минимальная</option>
+                                    <option value="model1">Стандартная</option>
+                                    <option value="model1">Плюс</option>
+                                    <option value="model1">Люкс</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="sell_auto">
+                            <div class="sell_complection">
+                                <select id="sell_mark">
+                                    <option selected disabled hidden>Марка</option>
+                                    <option value="Kia">Kia</option>
+                                    <option value="Audi">Audi</option>
+                                    <option value="Bmw">Bmw</option>
+                                    <option value="Lada">New York</option>
+                                    <option value="Hyundai">Hyundai</option>
+                                    <option value="Mitsubishi">Mitsubishi</option>
+                                    <option value="Renault">Renault</option>
+                                    <option value="Peugeot">Peugeot</option>
+                                    <option value="Suzuki">Suzuki</option>
+                                    <option value="Citroen">Citroen</option>
+                                    <option value="Uaz">Uaz</option>
+                                    <option value="Ford">Ford</option>
+                                    <option value="Nissan">Nissan</option>
+                                    <option value="Porshe">Porshe</option>
+                                    <option value="Jeep">Jeep</option>
+                                    <option value="Mersedes">Mersedes</option>
+                                </select>
+                            </div>
+
+                            <div class="sell_complection">
+                                <select id="sell_model">
+                                    <option selected disabled hidden>Модель</option>
+                                    <option value="model1">Модель 1</option>
+                                    <option value="model1">Модель 2</option>
+                                    <option value="model1">Модель 3</option>
+                                    <option value="model1">Модель 4</option>
+                                    <option value="model1">Модель 5</option>
+                                </select>
+                            </div>
+
+                            <div class="sell_complection">
+                                <select id="sell_complection">
+                                    <option selected disabled hidden>Комплектация</option>
+                                    <option value="model1">Минимальная</option>
+                                    <option value="model1">Стандартная</option>
+                                    <option value="model1">Плюс</option>
+                                    <option value="model1">Люкс</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="contact">
+                            <div class="name">
+                                <input type="text" placeholder="Имя*" required>
+                            </div>
+
+                            <div class="telephone">
+                                <input type="text" placeholder="Телефон +71234567890" pattern="((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
+                            </div>
+
+                            <div class="email">
+                                <input type="text" placeholder="E-mail*" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
+                            </div>
+                        </div>
+
+                        <div class="commentary">
+                            <textarea type="text" placeholder="Комментарий" cols="30" rows="7"></textarea>
+                        </div>
+
+                        <div class="button">
+                            <input class="btn" type="submit" value="Жду звонка">
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </main>
+        
+        <footer>
+            <h2 class="name">AutoDrive</h2>
+            <p class="description">Сеть автосалонов города Москвы</p>
+            <h2 class="clients">Клиентам</h2>
+            <div class="privacy">
+                <a class="footer_link" href="#">Политика конфиденциальности</a>
+                <a class="footer_link" href="#">Публичная оферта</a>
+            </div>
+            <h2 class="contacts">Контакты</h2>
+            <address>
+                <a href="tel:01234567890" class="footer_link">Наш телефон +71234567890</a>
+                <a href="mailto:sendemail@gmail.com" class="footer_link">Наша почта sendemail@gmail.com</a>
+                <p>г.Москва, пр-кт Вернадского 78</p>
+            </address>
+            <h2 class="social">Мы в социальных сетях</h2>
+            <div class="social-buttons">
+                <div class="social-button">
+                    <a href="#">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </div>
+
+                <div class="social-button">
+                    <a href="#">
+                        <i class="fa fa-whatsapp"></i>
+                    </a>
+                </div>
+
+                <div class="social-button">
+                    <a href="#">
+                        <i class="fa fa-vk"></i>
+                    </a>
+                </div>
+
+                <div class="social-button">
+                    <a href="#">
+                        <i class="fa fa-telegram"></i>
+                    </a>
+                </div>
+
+                <div class="social-button">
+                    <a href="#">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="copyright">"ООО AutoDrive © Все права защищены" </p>
+        </footer>
+    </body>
+</html>

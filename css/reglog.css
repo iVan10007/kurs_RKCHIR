@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+html{
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100%;
+    max-width: 100%;
+    background-color: #1d2030;
+    color:white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+#reglog_block{
+    padding: 20px;
+    width: 280px; 
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px; 
+    background-color: #474444; 
+    box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+    border: solid 1px #cbc9c9;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#reglog_block h2{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.email, .telephone, .name, .surname, .password, .confpassword{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+#reglog_block p a{
+    text-decoration: none;
+    color: rgb(200, 200, 201);
+    transition: 0.25s;
+}
+
+#reglog_block p a:hover{
+    color: red;
+}
+
+.icon {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    width: 30px;
+    align-items: center;
+    height: 100%;
+    background-color: #3a57af;
+    border-radius: 4px 0px 0px 4px;
+    color: white;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+    border: solid 0px #cbc9c9;
+    justify-content: center;
+}
+
+.form_input {
+    transition: 0.25s;
+    width: 100%;
+}
+
+.form_input:focus {
+    border: 1px solid aqua;
+}
+
+#reglog_block input[type=radio] {
+    visibility: hidden;
+}
+  
+label.radio {
+    cursor: pointer;
+    text-indent: 35px;
+    overflow: visible;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 15px;
+}
+  
+label.radio:before {
+    background: #3a57af;
+    content:'';
+    position: absolute;
+    top:2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+  
+label.radio:after {
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 0.5em;
+    height: 0.25em;
+    background: transparent;
+    top: 7.5px;
+    left: 4.5px;
+    border: 3px solid #ffffff;
+    border-top: none;
+    border-right: none;
+
+    transform: rotate(-45deg);
+}
+
+.goreg{
+    margin-bottom: 5px;
+}
+  
+input[type=radio]:checked + label:after {
+    opacity: 1;
+}
+  
+hr{
+    color: #a9a9a9;
+    opacity: 0.3;
+}
+
+.gender {
+    margin-bottom: 20px;
+}
+  
+.accounttype{
+    margin-left: 8px;
+    margin-top: 20px;
+}
+
+p.gender{
+    margin-bottom: 10px;
+}
+
+input.button {
+    margin-top: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    padding: 5px 50px;
+    text-decoration: none;
+    width: 50px; 
+    height: 27px; 
+    border-radius: 5px; 
+    background-color: #3a57af; 
+    box-shadow: 0 3px rgba(58,87,175,.75);
+    transition: all 0.1s linear 0s; 
+    top: 0px;
+    position: relative;
+}
+  
+input.button:hover {
+    top: 3px;
+    background-color:#2e458b;
+    box-shadow: none;
+}
+
+.form_input._error{
+    box-shadow: 0 0 10px red;
+    transition: 0.25s;
+}
+  
+footer{
+    box-sizing: border-box;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-area: foot;
+    max-width:100%;
+    color:white;
+    background-color: rgb(7, 11, 36);
+    grid-template-columns: 20% 20% 20% 20%; 
+    grid-template-rows:  auto auto auto;
+    grid-template-areas: 
+    "el1 el2 el3 el4"
+    "it1 it2 it3 it4" 
+    "copyright copyright copyright copyright";
+
+    justify-content:center;
+}
+
+@media screen and (max-width: 1440px){ 
+    footer{
+    grid-template-columns: 40% 40%; 
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "el1 el2"
+    "it1 it2"
+    "el3 el4"
+    "it3 it4"
+    "copyright copyright";
+    }
+}
+
+@media screen and (max-width: 700px){ 
+    footer{
+    grid-template-columns: 100%; 
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: 
+    "el1"
+    "it1"
+    "el2"
+    "it2"
+    "el3"
+    "it3"
+    "el4"
+    "it4"
+    "copyright";
+    padding-left: 20px;
+    }
+}
+
+footer h2{
+    font-size: 25px;
+    font-family: Yeseva One;
+    text-shadow: 2px black;
+    margin-bottom: 20px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer .name{
+    padding-top: 20px;
+    grid-area: el1;
+}
+
+footer .description{
+    grid-area: it1;
+}
+
+footer .clients{
+    grid-area: el2;
+    padding-top: 20px;
+}
+
+footer .contacts{
+    grid-area: el3;
+    padding-top: 20px;
+}
+
+footer .privacy{
+    grid-area: it2;
+    display: flex;
+    flex-direction: column;
+}
+
+footer address{
+    grid-area: it3;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_link{
+    margin-bottom: 5px;
+}
+
+footer .social{
+    padding-top: 20px;
+    grid-area: el4;
+}
+
+footer .social-buttons{
+    grid-area: it4;
+}
+
+.social-buttons
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap:8px;
+}
+
+.social-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #1B1E2D;
+    border-radius: 100%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 0 0 20px black;
+    overflow: hidden;
+    color: white;
+    z-index: 1;
+}
+
+.social-button::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(135deg, #ed0984,#ff8530,#d4ed3d);
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.social-button:hover::before {
+    top: 0;
+    height: 100%;
+}
+
+footer .copyright{
+    grid-area: copyright;
+    margin-top: 30px;
+    justify-self: center;
+}
