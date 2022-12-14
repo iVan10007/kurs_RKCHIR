@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function(){
         let exit_code = formValidate(form);
         if(exit_code == 1)
         {
-            window.open("../html/index.html"); // если регистрация успешна возврат на главную страницу 
+            window.open("../index.html"); // если регистрация успешна возврат на главную страницу 
         }
     }
 
